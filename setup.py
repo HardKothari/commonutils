@@ -15,5 +15,5 @@ setuptools.setup(
     },
     license='MIT',
     packages=['commonutils'],
-    install_requires=['requests','mariadb', 'colorama', 'bs4']
+    install_requires=['requests','mariadb', 'colorama']
 )
