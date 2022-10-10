@@ -89,7 +89,7 @@ Error on line {sys.exc_info()[-1].tb_lineno}
             cur = False
             return cur
 
-    # Removing all special characters from file name except 0-9,A-Z,a-z and
+    # Removing all special characters from file name except 0-9,A-Z,a-z and .
     """Example value of path = "D:/Telegram/Normal/video/"""""
     def rename_all_files_remove_specialchars(self, path=''):
         try:
