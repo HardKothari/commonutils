@@ -79,10 +79,8 @@ Error on line {sys.exc_info()[-1].tb_lineno}
             )
             self.log("MariaDB Connection Successful!!")
 
-            # Get Cursor for adding data in MariaDB
-            cur = conn.cursor()
-
-            return cur
+            # Returning connection so that connection can be opened and closed without relying on this class
+            return conn
 
         except mariadb.Error as e:
             self.exception_handle(e, "connect_mariadb")
